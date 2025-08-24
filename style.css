@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    padding-bottom: 0;
+    transition: background 1s ease-in-out;
+}
+
+/* Стили для главного контейнера приложения */
+.weather-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 50px;
+    margin-left: 100px;
+    margin-top: 110px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+/* Стили для заголовков */
+.app-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Стили для информации о погоде */
+.weather-info {
+    margin-top: 20px;
+}
+
+.city {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.temperature {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.additional-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.additional-info p {
+    margin: 0;
+}
+
+#city-search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#city-input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+#city-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#city-input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#search-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3b82f6;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+#search-button:hover {
+    background-color: #2563eb;
+}
+
+#search-button:active {
+    transform: scale(0.98);
+}
+
+
+.cities-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 100%; 
+    
+}
+
+.city-cards-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.city-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content:space-evenly;
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    
+}
+
+.city-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 220px;
+    min-width: 200px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-city {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card-temp {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-desc {
+    font-size: 1rem;
+    font-style: italic;
+}
