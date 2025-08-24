@@ -183,3 +183,86 @@ body {
     font-size: 1rem;
     font-style: italic;
 }
+
+@media screen and (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .weather-container {
+        padding: 30px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    #city-search-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #city-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search-button {
+        width: 100%;
+    }
+
+    .cities-container {
+        margin-left: 20px;
+    }
+
+    .city-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-container {
+        padding: 20px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    .app-title {
+        font-size: 2rem;
+    }
+
+    .temperature {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 1.2rem;
+    }
+
+    #city-input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #search-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .city-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+}
